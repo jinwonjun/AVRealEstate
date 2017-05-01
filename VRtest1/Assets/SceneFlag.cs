@@ -18,7 +18,7 @@ public class SceneFlag : MonoBehaviour {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-        Debug.Log(ray);
+        //Debug.Log(ray);
 
         if (Physics.Raycast(ray, out hit))
             {
@@ -27,7 +27,7 @@ public class SceneFlag : MonoBehaviour {
                 Debug.Log("collider detected");
                 }
 
-                if (hit.collider.name == "Cube")
+                if (hit.collider.name == "DoorFlag")
                 {
                     Debug.Log("click2 trigger");
                     SceneManager.LoadScene("Room2");
