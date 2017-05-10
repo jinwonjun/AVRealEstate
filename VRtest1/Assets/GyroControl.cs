@@ -47,6 +47,22 @@ public class GyroControl : MonoBehaviour {
         {
             transform.localRotation = gyro.attitude * rot;
         }
-		
-	}
+
+        if (Application.platform == RuntimePlatform.Android)
+
+        {
+
+            if (Input.GetKey(KeyCode.Escape))
+
+            {
+
+                // 할꺼 하셈
+
+                 Application.Quit();
+
+            }
+
+        }
+        
+    }
 }
