@@ -7,11 +7,6 @@ public class SceneFlagToMain : MonoBehaviour
 {
 
     RaycastHit hit;
-    // Use this for initialization
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -33,7 +28,7 @@ public class SceneFlagToMain : MonoBehaviour
             if (hit.collider.name == "DoorFlag")
             {
                 //Debug.Log("click2 trigger");
-                SceneManager.LoadScene("360player");
+                SceneManager.LoadScene("MainRoom(VR)");
             }
         }
     }
