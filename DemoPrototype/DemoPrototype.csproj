@@ -88,6 +88,9 @@
     <Reference Include="Vuforia.UnityExtensions">
       <HintPath>Assets\Vuforia\Scripts\Internal\Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
+    <Reference Include="LitJson">
+      <HintPath>Assets\Plugins\LitJson.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\360test\GyroControl.cs" />
@@ -98,7 +101,10 @@
     <Compile Include="Assets\AndroidManager.cs" />
     <Compile Include="Assets\ButtonManager.cs" />
     <Compile Include="Assets\ChangeScene.cs" />
+    <Compile Include="Assets\DB.cs" />
+    <Compile Include="Assets\DBTest.cs" />
     <Compile Include="Assets\DropdownManager.cs" />
+    <Compile Include="Assets\LoadData.cs" />
     <Compile Include="Assets\ModeSelect.cs" />
     <Compile Include="Assets\PanelActive.cs" />
     <Compile Include="Assets\ToggleManager.cs" />
