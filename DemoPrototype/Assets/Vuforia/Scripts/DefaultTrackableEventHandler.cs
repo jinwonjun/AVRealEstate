@@ -15,15 +15,15 @@ namespace Vuforia
                                                 ITrackableEventHandler
     {
         #region PRIVATE_MEMBER_VARIABLES
- 
+
         private TrackableBehaviour mTrackableBehaviour;
-    
+
         #endregion // PRIVATE_MEMBER_VARIABLES
 
 
 
         #region UNTIY_MONOBEHAVIOUR_METHODS
-    
+
         void Start()
         {
             mTrackableBehaviour = GetComponent<TrackableBehaviour>();
@@ -31,6 +31,8 @@ namespace Vuforia
             {
                 mTrackableBehaviour.RegisterTrackableEventHandler(this);
             }
+
+           
         }
 
         #endregion // UNTIY_MONOBEHAVIOUR_METHODS
@@ -73,13 +75,11 @@ namespace Vuforia
 
             bool Rc;
             bool Cc;
-
             // Enable rendering:
             foreach (Renderer component in rendererComponents)
             {
                 component.enabled = true;
                 Rc = true;
-
             }
 
             // Enable colliders:
@@ -89,15 +89,12 @@ namespace Vuforia
                 Cc = true;
             }
 
-            if((Rc=true)&&(Cc = true))
+            if ((Rc = true) && (Cc = true))
             {
-               // GameObject.Find("UI_Panel").SetActive(true);
-                GameObject.Find("UI_Panel").transform.FindChild("Panel").gameObject.SetActive(true);
-   //             GameObject.Find("Panel").transform.FindChild("VR-button").gameObject.SetActive(true);
-
-
+                GameObject.Find("UI_Panel").transform.Find("Right_Panel").gameObject.SetActive(true);
+               // GameObject.Find("UI_Panel").transform.Find("Left_Panel").gameObject.SetActive(true);
+               // GameObject.Find("UI_Panel").transform.Find("Left_Panel").transform.Find("VR").gameObject.SetActive(false);
             }
-
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
         }

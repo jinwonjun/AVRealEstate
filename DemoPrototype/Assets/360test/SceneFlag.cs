@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 public class SceneFlag : MonoBehaviour {
 
     RaycastHit hit;
-    // Use this for initialization
-    void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -35,7 +31,7 @@ public class SceneFlag : MonoBehaviour {
                 if (hit.collider.name == "DoorFlag")
                 {
                     Debug.Log("click2 trigger");
-                    SceneManager.LoadScene("Room2");
+                    SceneManager.LoadScene("Room2(VR)");
                 }
             }
         }

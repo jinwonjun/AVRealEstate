@@ -4,18 +4,35 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour {
-
-	// Use this for initialization
-public void SceneChange1()
+   public int ToggleNum;
+   public int DropNum;
+    ToggleManager TM;
+    DropdownManager DM;
+    public void Start()
     {
-        SceneManager.LoadScene("360player");
+        TM = GameObject.Find("ToggleGroup").GetComponent<ToggleManager>();
+        DM = GameObject.Find("Dropdown").GetComponent<DropdownManager>();
     }
-
-    void Update()
+    public void Update()
     {
-        if(Input.GetKey(KeyCode.Escape))
+        ToggleNum = TM.ToggleFlag;
+        DropNum = DM.myDropdown.value;
+        if ((ToggleNum == 1) && (DropNum == 1))
         {
-            Application.Quit();
+            SceneManager.LoadScene("MainRoom(VR)");
         }
+
+        if ((ToggleNum == 1) && (DropNum == 2))
+        {
+            SceneManager.LoadScene("MainRoom(25)");
+        }
+        if ((ToggleNum == 1) && (DropNum == 3))
+        {
+            SceneManager.LoadScene("MainRoom(33)");
+        }
+
+     
     }
+ 
+    
 }
