@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR;
 using UnityEngine.SceneManagement;
 
 public class SceneFlag : MonoBehaviour {
@@ -13,14 +12,11 @@ public class SceneFlag : MonoBehaviour {
       
     }
 
-
     // Update is called once per frame
     void Update () {
 
- 
-
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+        RaycastHit hit;
 
         if(Input.GetKey(KeyCode.Escape))
         {
