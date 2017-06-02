@@ -1,0 +1,42 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Show_Estate : MonoBehaviour {
+	string InitString = "Fighting Capstone!!!";
+	private AndroidJavaObject _plugin;
+	private string given_msg = null;
+	Text EstateInfo;
+	public double lat;
+	public double lon;
+
+
+
+	// Use this for initialization
+	void Awake () {
+		AndroidJavaClass Ajc = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+		_plugin = Ajc.GetStatic<AndroidJavaObject> ("currentActivity");
+	}
+	void Start(){
+		EstateInfo = GetComponent<Text> ();
+		EstateInfo.text = InitString;
+		_plugin.Call ("CallByUnity");
+		lat = GPS.Instance.latitude;
+		lon = GPS.Instance.longitude;
+		_plugin.Call ("initHttp",lat,lon);
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		lat = GPS.Instance.latitude;
+		lon = GPS.Instance.longitude;
+		_plugin.Call ("initHttp",lat,lon);
+	}
+
+	public void GetMsgFromAndroid(string arg){
+		given_msg = arg;
+		EstateInfo = GetComponent<Text> ();
+		EstateInfo.text = given_msg;
+	}
+}

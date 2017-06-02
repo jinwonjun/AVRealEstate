@@ -91,7 +91,8 @@ namespace Vuforia
 
             if ((Rc = true) && (Cc = true))
             {
-               GameObject.Find("UI_Panel").transform.Find("Right_Panel").gameObject.SetActive(true);
+				GameObject.Find("ARCamera").AddComponent <GPS> ();
+              	GameObject.Find("UI_Panel").transform.Find("Right_Panel").gameObject.SetActive(true);
                // GameObject.Find("UI_Panel").transform.Find("Left_Panel").gameObject.SetActive(true);
                // GameObject.Find("UI_Panel").transform.Find("Left_Panel").transform.Find("VR").gameObject.SetActive(false);
             }
