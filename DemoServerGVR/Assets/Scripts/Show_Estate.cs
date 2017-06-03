@@ -8,6 +8,7 @@ public class Show_Estate : MonoBehaviour {
 	private AndroidJavaObject _plugin;
 	private string given_msg = null;
 	public string given_house_id = null;
+    public string given_user_id = null;
 
 	Text EstateInfo;
 	public double lat;
@@ -41,7 +42,13 @@ public class Show_Estate : MonoBehaviour {
 		Debug.Log ("house id : " + given_house_id);
 	}
 
-	public void GetMsgFromAndroid(string arg){
+    public void GetUserId(string user_id)
+    {
+        given_user_id = user_id;
+        Debug.Log("user id : " + given_user_id);
+    }
+
+    public void GetMsgFromAndroid(string arg){
 		given_msg = arg;
 		EstateInfo = GetComponent<Text> ();
 		EstateInfo.text = given_msg;
