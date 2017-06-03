@@ -228,6 +228,7 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrMathHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+    <Compile Include="Assets\Scripts\Agency_Call_Num.cs" />
     <Compile Include="Assets\Scripts\AndroidManager.cs" />
     <Compile Include="Assets\Scripts\Bookmark.cs" />
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
@@ -235,6 +236,7 @@
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\DBtest1.cs" />
     <Compile Include="Assets\Scripts\DropdownManager.cs" />
+    <Compile Include="Assets\Scripts\GPS.cs" />
     <Compile Include="Assets\Scripts\GyroControl.cs" />
     <Compile Include="Assets\Scripts\LoadData.cs" />
     <Compile Include="Assets\Scripts\ModeSelect.cs" />
@@ -243,6 +245,7 @@
     <Compile Include="Assets\Scripts\ReverseNormals.cs" />
     <Compile Include="Assets\Scripts\SceneFlag.cs" />
     <Compile Include="Assets\Scripts\SceneFlagToMain.cs" />
+    <Compile Include="Assets\Scripts\Show_Estate.cs" />
     <Compile Include="Assets\Scripts\Switch2.cs" />
     <Compile Include="Assets\Scripts\SwitchVRMode.cs" />
     <Compile Include="Assets\Scripts\ToggleManager.cs" />

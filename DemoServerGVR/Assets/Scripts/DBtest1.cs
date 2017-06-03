@@ -18,7 +18,8 @@ public class DBtest1 : MonoBehaviour {
         Debug.Log("start");
         //sqlConnect();
         DBtest1 mysqlDB = new DBtest1(); //클래스 선언
-        DataTable tt = mysqlDB.selsql("SELECT * FROM vr_info WHERE path = 'test'");
+        Show_Estate H_id = GameObject.Find("EstateInfo").GetComponent<Show_Estate>();
+        DataTable tt = mysqlDB.selsql("SELECT * FROM ar_info WHERE house_id = "+ H_id.given_house_id);
         Debug.Log(tt.Rows[0][0].ToString());
     }
 
