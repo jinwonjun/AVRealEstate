@@ -7,6 +7,8 @@ public class Show_Estate : MonoBehaviour {
 	string InitString = "Fighting Capstone!!!";
 	private AndroidJavaObject _plugin;
 	private string given_msg = null;
+	private string given_house_id = null;
+
 	Text EstateInfo;
 	public double lat;
 	public double lon;
@@ -32,6 +34,11 @@ public class Show_Estate : MonoBehaviour {
 		lat = GPS.Instance.latitude;
 		lon = GPS.Instance.longitude;
 		_plugin.Call ("initHttp",lat,lon);
+	}
+
+	public void GetHouseId(string house_id){
+		given_house_id = house_id;
+		Debug.Log ("house id : " + given_house_id);
 	}
 
 	public void GetMsgFromAndroid(string arg){

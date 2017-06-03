@@ -16,12 +16,12 @@ public class Agency_Call_Num : MonoBehaviour {
 	void Start () {
 		Agency_num = GetComponent<Text> ();
 		Agency_num.text = "Call!!!Call!!!Call!!!Call!!!";
-		_pluginss.Call ("CallByUnity_Agency");
+		//_pluginss.Call ("CallByUnity_Agency");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		_pluginss.Call ("CallByUnity_Agency");
+		//_pluginss.Call ("CallByUnity_Agency");
 	}
 
 	public void GetAgencyCallNum(string call_arg){
