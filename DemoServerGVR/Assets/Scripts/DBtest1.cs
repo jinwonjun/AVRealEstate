@@ -15,14 +15,8 @@ public class DBtest1 : MonoBehaviour {
 
     void Start()
     {
-        Debug.Log("start");
+        Debug.Log("DBLoading...");
         //sqlConnect();
-        DBtest1 mysqlDB = new DBtest1(); //클래스 선언
-        Show_Estate H_id = GameObject.Find("EstateInfo").GetComponent<Show_Estate>();
-        DataTable House_Table = mysqlDB.selsql("SELECT * FROM ar_info WHERE house_id = "+ H_id.given_house_id);
-        DataTable User_Table = mysqlDB.selsql("SELECT * FROM favorite_map WHERE id = " + H_id.given_user_id);
-        Debug.Log(House_Table.Rows[0][0].ToString());
-        Debug.Log(User_Table.Rows[0][0].ToString());
     }
 
 
@@ -61,6 +55,15 @@ public class DBtest1 : MonoBehaviour {
         Debug.Log("complete");
         return dt; //데이터 테이블을 리턴함
     }
-    
+
+    public void sqlcmdall(string allcmd) //함수를 불러올때 명령어에 대한 String을 인자로 받아옴
+    {
+        sqlConnect(); //접속
+
+        MySqlCommand dbcmd = new MySqlCommand(allcmd, sqlconn); //명령어를 커맨드에 입력
+        dbcmd.ExecuteNonQuery(); //명령어를 SQL에 보냄
+
+        sqldisConnect(); //접속해제
+    }
     
 }

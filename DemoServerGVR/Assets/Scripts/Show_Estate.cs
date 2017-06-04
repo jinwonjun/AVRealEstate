@@ -9,12 +9,9 @@ public class Show_Estate : MonoBehaviour {
 	private string given_msg = null;
 	public string given_house_id = null;
     public string given_user_id = null;
-
 	Text EstateInfo;
 	public double lat;
 	public double lon;
-
-
 
 	// Use this for initialization
 	void Awake () {
@@ -24,7 +21,6 @@ public class Show_Estate : MonoBehaviour {
 	void Start(){
 		EstateInfo = GetComponent<Text> ();
 		EstateInfo.text = InitString;
-		_plugin.Call ("CallByUnity");
 		lat = GPS.Instance.latitude;
 		lon = GPS.Instance.longitude;
 		_plugin.Call ("initHttp",lat,lon);
