@@ -92,6 +92,7 @@ namespace Vuforia
             if((Rc = true)&&(Cc = true))
             {
                 GameObject.Find("UI_Panel").transform.Find("Right_Panel").gameObject.SetActive(true);
+                gameObject.AddComponent<GPS>();
             }
 
         }

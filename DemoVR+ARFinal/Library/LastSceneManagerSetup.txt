@@ -2,13 +2,13 @@ sceneSetups:
 - path: Assets/Scenes/ARCamera.unity
   isLoaded: 1
   isActive: 0
+- path: Assets/Scenes/MainRoom(VR).unity
+  isLoaded: 1
+  isActive: 0
 - path: Assets/Scenes/MainRoom(25).unity
   isLoaded: 1
   isActive: 0
 - path: Assets/Scenes/MainRoom(33).unity
-  isLoaded: 1
-  isActive: 0
-- path: Assets/Scenes/MainRoom(VR).unity
   isLoaded: 1
   isActive: 0
 - path: Assets/Scenes/Room2(VR).unity
@@ -26,3 +26,21 @@ sceneSetups:
 - path: Assets/Scenes/MainRoom(33-Gear).unity
   isLoaded: 1
   isActive: 1
+- path: Assets/Scenes/2-MainRoom(VR).unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/2-MainRoom(25).unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/2-MainRoom(33).unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/2-MainRoom(VR-Gear).unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/2-MainRoom(25-Gear).unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/2-MainRoom(33-Gear).unity
+  isLoaded: 1
+  isActive: 0
