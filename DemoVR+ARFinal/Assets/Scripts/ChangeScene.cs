@@ -19,6 +19,7 @@ public class ChangeScene : MonoBehaviour {
     {
         ToggleNum = TM.ToggleFlag;
         DropNum = DM.myDropdown.value;
+        //Myhouse
         if ((ToggleNum == 1) && (DropNum == 1) && (House_ID == "1"))
         {
             SceneManager.LoadScene("MainRoom(VR)");
@@ -48,31 +49,37 @@ public class ChangeScene : MonoBehaviour {
         }
 
 
+        //edutown
         if ((ToggleNum == 1) && (DropNum == 1) && (House_ID == "4"))
         {
             SceneManager.LoadScene("2-MainRoom(VR)");
-        }
-        if ((ToggleNum == 1) && (DropNum == 2) && (House_ID == "5"))
-        {
-            SceneManager.LoadScene("2-MainRoom(25)");
-        }
-        if ((ToggleNum == 1) && (DropNum == 3) && (House_ID == "6"))
-        {
-            SceneManager.LoadScene("2-MainRoom(33)");
         }
         if ((ToggleNum == 2) && (DropNum == 1) && (House_ID == "4"))
         {
             SceneManager.LoadScene("2-MainRoom(VR-Gear)");
         }
-        if ((ToggleNum == 2) && (DropNum == 2) && (House_ID == "5"))
+
+        //hakdongro
+        if ((ToggleNum == 1) && (DropNum == 1) && (House_ID == "5"))
+        {
+            SceneManager.LoadScene("2-MainRoom(25)");
+        }
+        if ((ToggleNum == 2) && (DropNum == 1) && (House_ID == "5"))
         {
             SceneManager.LoadScene("2-MainRoom(25-Gear)");
         }
-        if ((ToggleNum == 2) && (DropNum == 3) && (House_ID == "6"))
+
+        //desiang
+        if ((ToggleNum == 1) && (DropNum == 1) && (House_ID == "6"))
+        {
+            SceneManager.LoadScene("2-MainRoom(33)");
+        }
+        if ((ToggleNum == 2) && (DropNum == 1) && (House_ID == "6"))
         {
             SceneManager.LoadScene("2-MainRoom(33-Gear)");
         }
 
+        //earth
         if ((ToggleNum == 1) && (DropNum == 1) && (House_ID == "7"))
         {
             SceneManager.LoadScene("3-MainRoom(Cosmos)");
