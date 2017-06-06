@@ -24,11 +24,11 @@ public class ChangeScene : MonoBehaviour {
             SceneManager.LoadScene("MainRoom(VR)");
         }
 
-        if ((ToggleNum == 1) && (DropNum == 2) && (House_ID == "1"))
+        if ((ToggleNum == 1) && (DropNum == 2) && (House_ID == "2"))
         {
             SceneManager.LoadScene("MainRoom(25)");
         }
-        if ((ToggleNum == 1) && (DropNum == 3) && (House_ID == "1"))
+        if ((ToggleNum == 1) && (DropNum == 3) && (House_ID == "3"))
         {
             SceneManager.LoadScene("MainRoom(33)");
         }
@@ -37,36 +37,38 @@ public class ChangeScene : MonoBehaviour {
 
             SceneManager.LoadScene("MainRoom(VR-Gear)");
         }
-        if ((ToggleNum == 2) && (DropNum == 2) && (House_ID == "1"))
+        if ((ToggleNum == 2) && (DropNum == 2) && (House_ID == "2"))
         {
 
             SceneManager.LoadScene("MainRoom(25-Gear)");
         }
-        if ((ToggleNum == 2) && (DropNum == 3) && (House_ID == "1"))
+        if ((ToggleNum == 2) && (DropNum == 3) && (House_ID == "3"))
         {
             SceneManager.LoadScene("MainRoom(33-Gear)");
         }
-        if ((ToggleNum == 1) && (DropNum == 1) && (House_ID == "2"))
+
+
+        if ((ToggleNum == 1) && (DropNum == 1) && (House_ID == "4"))
         {
             SceneManager.LoadScene("2-MainRoom(VR)");
         }
-        if ((ToggleNum == 1) && (DropNum == 2) && (House_ID == "2"))
+        if ((ToggleNum == 1) && (DropNum == 2) && (House_ID == "5"))
         {
             SceneManager.LoadScene("2-MainRoom(25)");
         }
-        if ((ToggleNum == 1) && (DropNum == 3) && (House_ID == "2"))
+        if ((ToggleNum == 1) && (DropNum == 3) && (House_ID == "6"))
         {
             SceneManager.LoadScene("2-MainRoom(33)");
         }
-        if ((ToggleNum == 2) && (DropNum == 1) && (House_ID == "2"))
+        if ((ToggleNum == 2) && (DropNum == 1) && (House_ID == "4"))
         {
             SceneManager.LoadScene("2-MainRoom(VR-Gear)");
         }
-        if ((ToggleNum == 2) && (DropNum == 2) && (House_ID == "2"))
+        if ((ToggleNum == 2) && (DropNum == 2) && (House_ID == "5"))
         {
             SceneManager.LoadScene("2-MainRoom(25-Gear)");
         }
-        if ((ToggleNum == 2) && (DropNum == 3) && (House_ID == "2"))
+        if ((ToggleNum == 2) && (DropNum == 3) && (House_ID == "6"))
         {
             SceneManager.LoadScene("2-MainRoom(33-Gear)");
         }

@@ -91,8 +91,9 @@ namespace Vuforia
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
             if((Rc = true)&&(Cc = true))
             {
+                GameObject.Find("ARCamera").AddComponent<GPS>();
                 GameObject.Find("UI_Panel").transform.Find("Right_Panel").gameObject.SetActive(true);
-                gameObject.AddComponent<GPS>();
+                
             }
 
         }
