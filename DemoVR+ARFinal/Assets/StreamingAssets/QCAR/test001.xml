@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="worldcup" size="400.000000 310.030396" />
     <ImageTarget name="hakdongro" size="400.000000 312.563843" />
     <ImageTarget name="earth" size="400.000000 315.313477" />
     <ImageTarget name="edutown" size="400.000000 313.381012" />
