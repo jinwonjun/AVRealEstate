@@ -44,3 +44,9 @@ sceneSetups:
 - path: Assets/Scenes/2-MainRoom(33-Gear).unity
   isLoaded: 1
   isActive: 0
+- path: Assets/Scenes/3-MainRoom(Cosmos).unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/3-MainRoom(Cosmos-Gear).unity
+  isLoaded: 1
+  isActive: 0

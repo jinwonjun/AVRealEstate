@@ -72,5 +72,14 @@ public class ChangeScene : MonoBehaviour {
         {
             SceneManager.LoadScene("2-MainRoom(33-Gear)");
         }
+
+        if ((ToggleNum == 1) && (DropNum == 1) && (House_ID == "7"))
+        {
+            SceneManager.LoadScene("3-MainRoom(Cosmos)");
+        }
+        if ((ToggleNum == 2) && (DropNum == 1) && (House_ID == "7"))
+        {
+            SceneManager.LoadScene("3-MainRoom(Cosmos-Gear)");
+        }
     }
 }
